@@ -1,0 +1,119 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-300: hsl(0, 0%, 80%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+    --text-size: clamp(10px, 3.5vw, 14px);
+    --title-size: clamp(20px, 5vw, 24px);
+    --card-border-radius: 20px;
+    --button-border-radius: 10px;
+    --spacing-100: 8px;
+    --spacing-150: 12px;
+    --spacing-300: 24px;
+    --spacing-500: 40px;
+    --button-height: 3rem;
+    --button-width: 100%;
+}
+
+@font-face {
+    font-family: 'Inter Bold';
+    src: url(assets/fonts/static/Inter-Bold.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/static/Inter-Regular.ttf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter SemiBold';
+    src: url(assets/fonts/static/Inter-SemiBold.ttf) format('truetype');
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--yellow);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey-900);
+}
+
+.card {
+    background-color: var(--grey-800);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-500);
+    width: calc(90% - 1.5rem * 2);
+    max-width: 25rem;
+    min-width: 15rem;
+    margin-bottom: var(--spacing-300);
+}
+
+.avatar {
+    border-radius: 50%;
+    margin-bottom: var(--spacing-300);
+    width: 35%;
+    min-width: 85px;
+    height: auto;
+}
+
+.name {
+    font-size: var(--title-size);
+    font-family: 'Inter SemiBold';
+    color: var(--white);
+    margin-bottom: var(--spacing-100)
+}
+
+.location {
+    font-family: 'Inter SemiBold';
+    color: var(--green);
+    font-size: var(--text-size);
+    margin-bottom: var(--spacing-300);
+}
+
+.bio {
+    font-family: 'Inter';
+    color: var(--grey-300);
+    font-size: var(--text-size);
+    margin-bottom: var(--spacing-150);
+}
+
+button {
+    background-color: var(--grey-700);
+    border-radius: var(--button-border-radius);
+    border: none;
+    cursor: pointer;
+    margin-top: var(--spacing-150);
+    width: var(--button-width);
+    height: var(--button-height);
+    font-family: 'Inter Bold';
+    font-size: var(--text-size);
+    color: var(--white);
+}
+
+.attribution { 
+    a { 
+        color: var(--grey-300);
+    }
+    font-size: 11px;
+    text-align: center;
+    color: var(--green);
+    position: absolute;
+    bottom: var(--spacing-150);
+}
