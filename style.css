@@ -11,6 +11,7 @@
     --button-border-radius: 10px;
     --spacing-100: 8px;
     --spacing-150: 12px;
+    --spacing-200: 16px;
     --spacing-300: 24px;
     --spacing-500: 40px;
     --button-height: 3rem;
@@ -68,8 +69,8 @@ body {
 .avatar {
     border-radius: 50%;
     margin-bottom: var(--spacing-300);
-    width: 35%;
-    min-width: 85px;
+    width: 30%;
+    min-width: 80px;
     height: auto;
 }
 
@@ -99,7 +100,7 @@ button {
     border-radius: var(--button-border-radius);
     border: none;
     cursor: pointer;
-    margin-top: var(--spacing-150);
+    margin-top: var(--spacing-200);
     width: var(--button-width);
     height: var(--button-height);
     font-family: 'Inter Bold';
