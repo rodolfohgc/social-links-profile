@@ -99,13 +99,17 @@ button {
     background-color: var(--grey-700);
     border-radius: var(--button-border-radius);
     border: none;
-    cursor: pointer;
     margin-top: var(--spacing-200);
     width: var(--button-width);
     height: var(--button-height);
     font-family: 'Inter Bold';
     font-size: var(--text-size);
     color: var(--white);
+}
+
+button:hover {
+    background-color: var(--green);
+    cursor: pointer;
 }
 
 .attribution { 
